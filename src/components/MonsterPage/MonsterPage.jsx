@@ -22,7 +22,7 @@ export const MonsterPage = () => {
 
     useEffect(() => {
         getMonster();
-    }, [])
+    }, [params.monsterID])
 
 
     return (
@@ -37,7 +37,7 @@ export const MonsterPage = () => {
                         border: '1px solid pink',
                         borderRadius: '50%',
                     }}
-                        src={'https://robohash.org/' + monster.username} alt="avatar"/>
+                        src={'https://robohash.org/ ' + monster.username} alt="avatar"/>
                     <Card.Title>{monster.name}</Card.Title>
                     <Card.Title>{monster.username}</Card.Title>
                     <Card.Title>{monster.email}</Card.Title>
